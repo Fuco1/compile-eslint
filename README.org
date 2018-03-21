@@ -1,0 +1,14 @@
+* compile-eslint
+
+Emacs =compilation-mode= support for [[https://eslint.org/][ESLint]].
+
+* Usage
+
+Load this package and register =eslint= to =compilation-error-regexp-alist=:
+
+#+BEGIN_SRC elisp
+(require 'compile-eslint)
+(push 'eslint compilation-error-regexp-alist)
+#+END_SRC
+
+That's it!
