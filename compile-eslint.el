@@ -35,7 +35,7 @@
   "Find the filename for current error."
   (save-match-data
     (save-excursion
-      (when (re-search-backward (rx bol (group "/" (+ any)) eol))
+      (when (re-search-backward (rx bol (group "/" (+ any)) eol) nil t)
         (list (match-string 1))))))
 
 ;;;###autoload
